@@ -60,8 +60,9 @@
                                     <p>
                                         <span class="title">{{ city_weather.city }}</span>
                                         <br>
-                                        <span class="subtitle">{{ city_weather.temperature }}° F</span>
-                                        <br> {{ city_weather.description }}
+                                        <span class="subtitle">Temp:{{city_weather.temperature|floatformat }}° C</span>
+                                        <br>{{ city_weather.description }}
+										<br>Humidity:{{city_weather.humidity}}%
                                     </p>
                                 </div>
                             </div>
